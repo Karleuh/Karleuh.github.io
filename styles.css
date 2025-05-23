@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #000270;
+    background-color: #260051;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,10 @@ body {
     min-height: 100vh;
 }
 
+/* Projects cards */
 header {
-    text-align: center;
-    margin-top: 2rem;
+    text-align: left;
+    margin-top: 5rem;
 }
 
 header h1 {
@@ -40,14 +41,18 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: left;
 }
 
 .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  overflow-wrap: break-word; 
+  word-break: break-word; 
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
@@ -79,6 +84,8 @@ main {
     background-color: #000270;
 }
 
+/* footer  */
+
 footer {
     margin-top: 3rem;
     text-align: center;
@@ -98,3 +105,52 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* NavBar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #424346;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 10px 10px 0 0;    
+}
+
+.navbar a:hover {
+  background-color: #7e7e7e;
+}
+
+.navbar .active {
+  background-color: #260051;
+  color: rgb(255, 255, 255);
+}
+
+.content {
+  padding-top: 60px;
+  text-align: left;
+  color:  rgb(255, 255, 255);
+  padding: 20px;
+  width: 90%;
+}
+
+.content > * {
+  margin-bottom: 2rem;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
